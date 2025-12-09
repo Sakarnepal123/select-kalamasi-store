@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Select Kalamasi Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <h2>Select Kalamasi Store</h2>
+    <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<header>
+    <h1>Welcome to Select Kalamasi Store</h1>
+    <p>Owner: <strong>Sakar Nepal</strong></p>
+</header>
+
+<!-- PRODUCTS -->
+<section class="products">
+    <h2>Our Liquors</h2>
+
+    <div class="product-list">
+
+        <div class="product">
+            <img src="https://i.imgur.com/Uf2uTtQ.png" alt="">
+            <h3>Jack Daniel’s Whiskey</h3>
+            <p class="price">$45</p>
+            <button onclick="orderProduct('Jack Daniel’s Whiskey', 45)">Order Now</button>
+        </div>
+
+        <div class="product">
+            <img src="https://i.imgur.com/GUOeZ0w.png" alt="">
+            <h3>Red Label</h3>
+            <p class="price">$30</p>
+            <button onclick="orderProduct('Red Label', 30)">Order Now</button>
+        </div>
+
+        <div class="product">
+            <img src="https://i.imgur.com/Wmq3aTf.png" alt="">
+            <h3>Smirnoff Vodka</h3>
+            <p class="price">$25</p>
+            <button onclick="orderProduct('Smirnoff Vodka', 25)">Order Now</button>
+        </div>
+
+    </div>
+</section>
+
+<!-- ORDER HISTORY -->
+<section class="orders">
+    <h2>Your Orders</h2>
+    <ul id="orderList"></ul>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
